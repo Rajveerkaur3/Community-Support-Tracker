@@ -21,3 +21,4 @@ function handleFormSubmit(event) {
   }
   
   module.exports = { handleFormSubmit };
+  
