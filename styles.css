@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: honeydew;
+    color: darkgreen;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px lightgray;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: forestgreen;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid forestgreen;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: seagreen;
+}
+
+/* Forms */
+form {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: forestgreen;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Donation History and Tracker */
+#donationList, #volunteerHoursTracker, #eventSignup {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: mintcream;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+/* Donation History List */
+#donationHistory {
+    list-style: none;
+    padding: 0;
+}
+
+#donationHistory li {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input, textarea, button {
+        font-size: 0.9rem;
+    }
+}

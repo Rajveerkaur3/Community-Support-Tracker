@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donation Tracker</h1>
+        
+        <!-- Donation Form -->
+        <form id="donationForm">
+            <label for="charityName">Charity Name:</label>
+            <input type="text" id="charityName" name="charityName" required>
+            
+            <label for="donationAmount">Donation Amount ($):</label>
+            <input type="number" id="donationAmount" name="donationAmount" min="0" step="0.01" required>
+            
+            <label for="donationDate">Date of Donation:</label>
+            <input type="date" id="donationDate" name="donationDate" required>
+            
+            <label for="donorMessage">Donor Comment/Message:</label>
+            <textarea id="donorMessage" name="donorMessage" rows="4" placeholder="Leave a personal message..." required></textarea>
+            
+            <button type="submit">Add Donation</button>
+        </form>
+
+        <!-- Donation History -->
+        <div id="donationList">
+            <h2>Donation History</h2>
+            <ul id="donationHistory"></ul>
+        </div>
+        
+        <!-- Volunteer Hours Tracker -->
+        <div id="volunteerHoursTracker">
+            <h2>Volunteer Hours Tracker</h2>
+            <form id="volunteerForm">
+                <label for="volunteerName">Volunteer Name:</label>
+                <input type="text" id="volunteerName" name="volunteerName" required>
+
+                <label for="volunteerHours">Hours Volunteered:</label>
+                <input type="number" id="volunteerHours" name="volunteerHours" min="0" required>
+
+                <label for="volunteerDate">Date of Volunteering:</label>
+                <input type="date" id="volunteerDate" name="volunteerDate" required>
+
+                <button type="submit">Log Volunteer Hours</button>
+            </form>
+        </div>
+        
+        <!-- Event Signup -->
+        <div id="eventSignup">
+            <h2>Event Signup</h2>
+            <form id="eventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="attendeeName">Your Name:</label>
+                <input type="text" id="attendeeName" name="attendeeName" required>
+
+                <button type="submit">Sign Up for Event</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="donations.js"></script>
+</body>
+</html>
