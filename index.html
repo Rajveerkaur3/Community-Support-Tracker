@@ -40,11 +40,42 @@
                 <label for="volunteerName">Volunteer Name:</label>
                 <input type="text" id="volunteerName" name="volunteerName" required>
 
+        <!-- Table for displaying volunteer log -->
+        <table id="hoursTable">
+        <thead>
+        <tr>
+            <th>Charity Name</th>
+            <th>Hours Volunteered</th>
+            <th>Date</th>
+            <th>Experience Rating</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+        
+                <label for="charityName">Charity Name:</label>
+                <input type="text" id="charityName" name="charityName" required>
+
                 <label for="volunteerHours">Hours Volunteered:</label>
                 <input type="number" id="volunteerHours" name="volunteerHours" min="0" required>
 
                 <label for="volunteerDate">Date of Volunteering:</label>
                 <input type="date" id="volunteerDate" name="volunteerDate" required>
+
+        
+                <label for="experienceRating">Volunteer Experience Rating:</label>
+            <select id="experienceRating" name="experienceRating" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+                
 
                 <button type="submit">Log Volunteer Hours</button>
             </form>
@@ -70,4 +101,5 @@
 
     <script src="donations.js"></script>
 </body>
+
 </html>
