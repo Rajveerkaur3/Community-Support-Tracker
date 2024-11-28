@@ -1,5 +1,6 @@
 // script.test.js
-const { handleFormSubmit } = require("../script"); // Adjust the path as necessary
+const { handleFormSubmit } = require("./script");
+
 
 describe("handleFormSubmit", () => {
     // Mock event object for testing
