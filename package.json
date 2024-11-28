@@ -1,0 +1,22 @@
+{
+  "name": "volunteer-hours-tracker",
+  "version": "1.0.0",
+  "description": "Web application for tracking volunteer hours",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "volunteer",
+    "tracker",
+    "volunteer hours",
+    "volunteer date",
+    "charity date",
+    "experience rating"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
