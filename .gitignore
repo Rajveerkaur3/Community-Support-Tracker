@@ -1,0 +1,44 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test directories
+coverage/
+test/
+
+# Optional: Ignore npm's package-lock.json (if you don't want to version it)
+# package-lock.json
+
+# Ignore system-specific files (Linux, Mac, Windows)
+*.bak
+*.tmp
+*.swp

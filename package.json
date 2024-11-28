@@ -1,0 +1,21 @@
+{
+  "name": "donation-tracker",
+  "version": "1.0.0",
+  "description": "A web application for tracking donations with form validation and data handling.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "donation",
+    "tracker",
+    "form-validation",
+    "JavaScript",
+    "Jest"
+  ],
+  "author": "Noah Manaigre",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
