@@ -155,3 +155,4 @@ function clearAllErrors() {
 
 // Load donations when the page is loaded
 window.addEventListener("load", loadDonations);
+
