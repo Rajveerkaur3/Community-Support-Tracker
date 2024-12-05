@@ -123,3 +123,16 @@ button:hover {
         font-size: 0.9rem;
     }
 }
+
+/* Invalid inputs */
+input.invalid, textarea.invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Error messages */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
