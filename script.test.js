@@ -19,7 +19,7 @@ describe("handleFormSubmit", () => {
 
     test("should return the form data when inputs are valid", () => {
         const event = createMockEvent({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "Helping Hands",
             volunteerHours: "5",
             volunteerDate: "2024-11-01",
@@ -28,7 +28,7 @@ describe("handleFormSubmit", () => {
 
         const result = handleFormSubmit(event);
         expect(result).toEqual({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "Helping Hands",
             volunteerHours: 5,
             volunteerDate: "2024-11-01",
@@ -38,7 +38,7 @@ describe("handleFormSubmit", () => {
 
     test("should throw an error when charity name is missing", () => {
         const event = createMockEvent({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "",
             volunteerHours: "5",
             volunteerDate: "2024-11-01",
@@ -50,7 +50,7 @@ describe("handleFormSubmit", () => {
 
     test("should throw an error when volunteer hours are not positive", () => {
         const event = createMockEvent({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "Helping Hands",
             volunteerHours: "0",
             volunteerDate: "2024-11-01",
@@ -62,7 +62,7 @@ describe("handleFormSubmit", () => {
 
     test("should throw an error when experience rating is not between 1 and 5", () => {
         const event = createMockEvent({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "Helping Hands",
             volunteerHours: "5",
             volunteerDate: "2024-11-01",
@@ -74,7 +74,7 @@ describe("handleFormSubmit", () => {
 
     test("should throw an error when volunteer date is missing", () => {
         const event = createMockEvent({
-            volunteerName: "John Doe",
+            volunteerName: "Rajveer Kaur",
             charityName: "Helping Hands",
             volunteerHours: "5",
             volunteerDate: "",
